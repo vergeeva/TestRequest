@@ -1,10 +1,11 @@
 /*const token = "eb081de1da8d4a85b98123453233001";
 var url = 'http://api.weatherapi.com/v1/current.json';*/
-let token = "eb081de1da8d4a85b98123453233001";
+
+import key from './token';
 
 function getWeather() {
     let city = document.getElementById("Cities").value;
-    let url = `http://api.weatherapi.com/v1/current.json?key=${token}&q=${city}&lang=ru`;
+    let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&lang=ru`;
     // Отправляем запрос
     axios.get(url).then(res => {
         // Выводим результат в консоль браузера
