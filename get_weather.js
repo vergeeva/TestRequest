@@ -1,5 +1,3 @@
-/*const token = "eb081de1da8d4a85b98123453233001";
-var url = 'http://api.weatherapi.com/v1/current.json';*/
 
 import key from './token';
 
