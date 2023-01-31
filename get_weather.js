@@ -1,5 +1,4 @@
-
-import key from './token';
+const key = "eb081de1da8d4a85b98123453233001";
 
 function getWeather() {
     let city = document.getElementById("Cities").value;
@@ -20,10 +19,3 @@ function getWeather() {
         document.querySelector('.wind').innerHTML = res.data.current.wind_kph;
     })
 }
-
-/*
-function select_city()
-{
-    let SelectCity = document.getElementById("Cities").value;
-    document.querySelector('.city').innerHTML = SelectCity;
-}*/
