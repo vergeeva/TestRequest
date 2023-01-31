@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+</head>
+<body onload="getWeather()">
+<h1 class="header_text" >Прогноз погоды</h1>
+<div class="MainDiv">
+    <div class="ButtonAndTextBox">
+<!--        <button class="GetWeatherButton" onclick="getWeather('Челябинск')">Загрузить погоду</button>-->
+<!--        <a class="GetWeatherButton"  href="#" onclick="getWeather()">Загрузить погоду</a>-->
+        <p>Выберите город</p>
+        <select class="SelectCity" id="Cities" onchange="getWeather()">
+            <option>Челябинск</option>
+            <option>Москва</option>
+            <option>Екатеринбург</option>
+            <option>Тюмень</option>
+            <option>Санкт-Петербург</option>
+            <option>Миасс</option>
+        </select>
+    </div>
+
+    <div class="WeatherInfo">
+        <h2>Выбранный город: <span class="city"></span></h2>
+        <p>Температура воздуха: <span class="temp"></span>°C</p>
+        <p>Ощущается как: <span class="feel"></span>°C</p>
+        <p>Влажность: <span class="humidity"></span>%</p>
+        <p>Ветер: <span class="wind"></span> км/ч</p>
+    </div>
+</div>
+<script src = "get_weather.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
